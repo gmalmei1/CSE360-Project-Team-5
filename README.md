@@ -5,5 +5,7 @@ This is a readme file for CSE360 project.
 Group members are Ian Woodburne, Kevin Lin, 
 Brendan Garcia, Giovanni Almeida, Okier Arzola.
 
-This is Kevin Lin's commit!
 
+This commit was made by Ian Woodburne!
+
+This is Kevin Lin's commit!
