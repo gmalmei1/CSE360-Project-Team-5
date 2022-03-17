@@ -3,8 +3,6 @@ package com.restaurant;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -13,7 +11,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
-import java.io.FileInputStream;
 
 public class HomePage extends BorderPane {
 
@@ -30,7 +27,6 @@ public class HomePage extends BorderPane {
     public Color boxBackgroundColor, boxEdgeColor;
 
     public VBox pane, pane2;
-
 
     // home page constructor
 
@@ -50,6 +46,7 @@ public class HomePage extends BorderPane {
         String pressText = "Click Now to Get Free V-Bucks:";
         press = new Button(pressText);
 
+
         // create blue rectangle
         boxWidth = 300;
         boxHeight = 200;
@@ -63,6 +60,7 @@ public class HomePage extends BorderPane {
 
         this.setLeft(box);
 
+
         // create a VBox: lays out its children in form of vertical columns.
         // If the vbox has a border and/or padding set, then the contents
         // will be layed out within those insets.
@@ -73,29 +71,13 @@ public class HomePage extends BorderPane {
 
         this.setTop(pane);
 
+
         pane2 = new VBox();
         pane2.setSpacing(15);
         pane2.setPadding(new Insets(10, 10, 10, 10));
         pane2.getChildren().addAll(press);
 
         this.setCenter(pane2);
-
-        // load an image
-        String filePath = "C:/Users/ianwo/IdeaProjects/restaurant/pictures/default_skin.jpg";
-
-        Image defaultSkin = new Image(filePath);
-
-        ImageView imageView = new ImageView(defaultSkin);
-
-        //imageView.setX(50);
-        //imageView.setY(25);
-
-        imageView.setFitHeight(300);
-        imageView.setFitWidth(500);
-
-        imageView.setPreserveRatio(true);
-
-        this.setRight(imageView);
 
     }
 
